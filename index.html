@@ -20,34 +20,16 @@ body{
   text-align:center;
   padding:70px 20px;
 }
-.brand-title{
-  font-size:42px;
-  font-weight:900;
-  margin:0;
-}
-.brand-sub{
-  font-size:22px;
-  color:#dcdcdc;
-  margin:8px 0 12px;
-}
-.highlight{
-  background:#00b894;
-  padding:6px 14px;
-  border-radius:20px;
-  font-weight:bold;
-}
+.brand-title{font-size:42px;font-weight:900;margin:0;}
+.brand-sub{font-size:22px;color:#dcdcdc;margin:8px 0 12px;}
+.highlight{background:#00b894;padding:6px 14px;border-radius:20px;font-weight:bold;}
 .hero-buttons a{
-  display:inline-block;
-  margin:8px;
-  padding:12px 24px;
-  background:#00b894;
-  color:white;
-  text-decoration:none;
-  border-radius:6px;
-  font-weight:bold;
+  display:inline-block;margin:8px;padding:12px 24px;
+  background:#00b894;color:white;text-decoration:none;
+  border-radius:6px;font-weight:bold;
 }
 
-/* ================= SECTIONS ================= */
+/* ================= GENERIC ================= */
 .section{
   background:white;
   margin:14px;
@@ -55,32 +37,20 @@ body{
   border-radius:16px;
   text-align:center;
 }
-.section h2{
-  margin-top:0;
-}
-
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
   gap:16px;
 }
-
 .card{
   border:1px solid #ddd;
   border-radius:14px;
   padding:14px;
   background:#fff;
 }
-
-.price{
-  font-weight:bold;
-  color:#00b894;
-  margin:6px 0;
-}
-
 .buy{
   display:inline-block;
-  margin-top:8px;
+  margin-top:10px;
   background:#25D366;
   color:white;
   padding:10px 18px;
@@ -101,6 +71,21 @@ body{
   align-items:center;
 }
 
+/* ================= TRUST STRIP ================= */
+.trust-strip{
+  background:#0a1931;
+  color:white;
+  padding:30px 20px;
+  margin:14px;
+  border-radius:16px;
+}
+.trust-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:14px;
+  font-size:16px;
+}
+
 /* ================= PRICING TABLE ================= */
 table{
   width:100%;
@@ -117,7 +102,7 @@ th{
   color:white;
 }
 
-/* ================= BRANDS (ANIMATED) ================= */
+/* ================= BRANDS ================= */
 .brands-section{
   background:linear-gradient(135deg,#0a1931,#1e3c72);
   color:white;
@@ -126,14 +111,12 @@ th{
   border-radius:20px;
   text-align:center;
 }
-
 .brands-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
   gap:15px;
   margin-top:20px;
 }
-
 .brand{
   background:rgba(255,255,255,0.12);
   padding:14px;
@@ -142,24 +125,15 @@ th{
   backdrop-filter:blur(6px);
   transition:transform 0.3s ease;
 }
-
-.brand:hover{
-  transform:translateY(-6px) scale(1.05);
-}
-
-.glow{
-  animation:glowPulse 2.5s infinite;
-}
-.float{
-  animation:floatMove 3s infinite;
-}
+.brand:hover{transform:translateY(-6px) scale(1.05);}
+.glow{animation:glowPulse 2.5s infinite;}
+.float{animation:floatMove 3s infinite;}
 
 @keyframes glowPulse{
   0%{box-shadow:0 0 6px rgba(0,255,200,0.4);}
   50%{box-shadow:0 0 18px rgba(0,255,200,0.9);}
   100%{box-shadow:0 0 6px rgba(0,255,200,0.4);}
 }
-
 @keyframes floatMove{
   0%{transform:translateY(0);}
   50%{transform:translateY(-6px);}
@@ -176,26 +150,16 @@ footer{
 
 /* FLOAT BUTTONS */
 .whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:white;
-  padding:15px;
-  border-radius:50%;
-  font-size:22px;
-  text-decoration:none;
+  position:fixed;bottom:20px;right:20px;
+  background:#25D366;color:white;
+  padding:15px;border-radius:50%;
+  font-size:22px;text-decoration:none;
 }
 .call{
-  position:fixed;
-  bottom:20px;
-  left:20px;
-  background:#0984e3;
-  color:white;
-  padding:15px;
-  border-radius:50%;
-  font-size:22px;
-  text-decoration:none;
+  position:fixed;bottom:20px;left:20px;
+  background:#0984e3;color:white;
+  padding:15px;border-radius:50%;
+  font-size:22px;text-decoration:none;
 }
 </style>
 </head>
@@ -205,11 +169,10 @@ footer{
 <!-- HERO -->
 <header class="hero">
   <h1 class="brand-title">Realtek Computers</h1>
-  <p class="brand-sub">Professional Laptop Repair & Service</p>
+  <p class="brand-sub">Professional Laptop Repair & Services</p>
   <p><span class="highlight">Telangana & Andhra Pradesh</span></p>
-
   <div class="hero-buttons">
-    <a href="#services">Our Services</a>
+    <a href="#services">Service Pricing</a>
     <a href="https://wa.me/917997618505">WhatsApp</a>
     <a href="tel:+917997618505">Call Now</a>
   </div>
@@ -223,24 +186,36 @@ footer{
   </div>
   <div>
     <h2>Fast & Reliable Laptop Repair</h2>
-    <p>Certified Technicians • Same-Day Service • 30-Day Warranty</p>
+    <p>Certified Technicians • Same-Day Service • Warranty Support</p>
     <ul style="text-align:left;line-height:1.7">
       <li>✅ Certified Technicians</li>
-      <li>🔒 Secure Booking</li>
+      <li>🔒 Secure Booking (SSL)</li>
       <li>🕑 4-Hour Service Guarantee</li>
-      <li>⭐ Google 4.9+ Reviews</li>
+      <li>⭐ 30-Day Repair Warranty</li>
+      <li>💬 Google 4.9+ Reviews</li>
     </ul>
     <a class="buy" href="https://wa.me/917997618505">📲 Book via WhatsApp</a>
   </div>
 </section>
 
-<!-- SERVICE PRICE LIST -->
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-grid">
+    <div>✅ Certified Technicians</div>
+    <div>🔒 Secure Booking (SSL)</div>
+    <div>🕑 4-Hour Service Guarantee</div>
+    <div>⭐ 30-Day Repair Warranty</div>
+    <div>💬 Google 4.9+ Reviews</div>
+    <div>📲 Book via WhatsApp</div>
+  </div>
+</div>
+
+<!-- FULL SERVICE PRICE LIST (UNCHANGED PRICES) -->
 <div class="section" id="services">
 <h2>💰 Laptop Service Price List</h2>
 
 <table>
 <tr><th>Service</th><th>Estimated Cost</th></tr>
-
 <tr><td>🔧 Screen Replacement</td><td>₹3,000 – ₹8,000</td></tr>
 <tr><td>⌨️ Keyboard Replacement</td><td>₹1,500 – ₹3,000</td></tr>
 <tr><td>🔋 Battery Replacement</td><td>₹2,000 – ₹5,000</td></tr>
@@ -251,25 +226,20 @@ footer{
 <tr><td>💾 Data Recovery</td><td>₹1,500 – ₹5,000</td></tr>
 <tr><td>🔌 Power Jack Replacement</td><td>₹1,000 – ₹3,000</td></tr>
 <tr><td>🌀 Fan Replacement</td><td>₹1,000 – ₹3,000</td></tr>
-<tr><td>💿 Optical Drive Replacement</td><td>₹1,000 – ₹2,500</td></tr>
 <tr><td>💧 Liquid Damage Repair</td><td>₹2,000 – ₹8,000</td></tr>
-<tr><td>📶 Wi-Fi Card Replacement</td><td>₹1,000 – ₹2,500</td></tr>
 <tr><td>📸 Webcam Replacement</td><td>₹1,000 – ₹2,500</td></tr>
 <tr><td>🖱️ Touchpad Replacement</td><td>₹1,000 – ₹2,500</td></tr>
-<tr><td>⌨️ Keyboard Key Replacement (Per Key)</td><td>₹100 – ₹500</td></tr>
-
+<tr><td>⌨️ Keyboard Key Replacement</td><td>₹100 – ₹500 / key</td></tr>
 </table>
 
-<p style="margin-top:10px;font-size:14px;color:#555;">
-*Final cost depends on laptop model & condition
+<p style="font-size:14px;color:#555;margin-top:10px;">
+*Final pricing depends on laptop model & condition
 </p>
 </div>
 
-<!-- BRANDS WE REPAIR -->
+<!-- BRANDS -->
 <section class="brands-section">
 <h2>💻 Brands We Repair</h2>
-<p>All major laptop brands supported</p>
-
 <div class="brands-grid">
   <div class="brand glow">Dell</div>
   <div class="brand float">HP</div>
@@ -284,10 +254,7 @@ footer{
   <div class="brand glow">LG</div>
   <div class="brand float">Microsoft Surface</div>
 </div>
-
-<a class="buy" href="https://wa.me/917997618505" style="margin-top:20px;">
-📲 Ask About Your Brand
-</a>
+<a class="buy" href="https://wa.me/917997618505" style="margin-top:20px;">📲 Ask About Your Brand</a>
 </section>
 
 <footer>
