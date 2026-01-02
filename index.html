@@ -71,6 +71,84 @@ body{
   align-items:center;
 }
 
+  /* ===== SERVICE ACCORDION ===== */
+.accordion{
+  max-width:1000px;
+  margin:0 auto;
+}
+
+.accordion-item{
+  background:#ffffff;
+  border-radius:14px;
+  margin-bottom:12px;
+  border:1px solid #ddd;
+  overflow:hidden;
+}
+
+.accordion-header{
+  padding:18px;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+  background:linear-gradient(to right,#0a1931,#1e3c72);
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.accordion-header span{
+  font-size:22px;
+}
+
+.accordion-content{
+  display:none;
+  padding:18px;
+  background:#f9fbff;
+}
+
+.accordion-content p{
+  margin:6px 0;
+}
+
+/* ===== BOOK FORM ===== */
+.book-form{
+  background:linear-gradient(135deg,#e8f3ff,#f6f0ff);
+  border-radius:18px;
+  padding:30px;
+  margin-top:30px;
+  text-align:center;
+}
+
+.book-form input,
+.book-form textarea,
+.book-form select{
+  width:100%;
+  padding:12px;
+  margin:8px 0;
+  border-radius:8px;
+  border:1px solid #ccc;
+  font-size:16px;
+}
+
+.book-form button{
+  background:#25D366;
+  color:white;
+  padding:14px 30px;
+  border:none;
+  border-radius:30px;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .accordion-header{
+    font-size:16px;
+  }
+}
+
 /* ================= TRUST STRIP ================= */
 .trust-strip{
   background:#0a1931;
