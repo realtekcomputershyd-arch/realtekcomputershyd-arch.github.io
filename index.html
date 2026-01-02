@@ -1,137 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realtek Computers - Laptop Sales & Spare Parts</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; }
-        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem 0; text-align: center; }
-        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-        header p { font-size: 1.1rem; }
-        nav { background: #333; padding: 1rem; text-align: center; }
-        nav a { color: white; margin: 0 1.5rem; text-decoration: none; font-weight: bold; }
-        nav a:hover { color: #667eea; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-        .section { margin: 3rem 0; }
-        h2 { color: #667eea; margin: 1.5rem 0; font-size: 2rem; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 1.5rem; }
-        .product-card { background: #f4f4f4; padding: 1.5rem; border-radius: 8px; text-align: center; transition: transform 0.3s; }
-        .product-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .product-card h3 { color: #764ba2; margin-top: 1rem; }
-        .btn { background: #667eea; color: white; padding: 0.8rem 1.5rem; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; margin-top: 1rem; }
-        .btn:hover { background: #764ba2; }
-        footer { background: #333; color: white; text-align: center; padding: 2rem; margin-top: 3rem; }
-        .contact { background: #f4f4f4; padding: 2rem; border-radius: 8px; text-align: center; }
-        .contact p { margin: 0.5rem 0; }
-        .icon { font-size: 3rem; margin-bottom: 1rem; }
-    </style>
+<meta charset="UTF-8">
+<title>Realtek Computers | Buy Laptop Parts & Refurbished Laptops</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{margin:0;font-family:Arial;background:#f5f5f5;color:#222}
+header{background:#0a1931;color:white;text-align:center;padding:55px}
+header h1{margin:0;font-size:28px}
+header p{color:#ddd}
+.btn{background:#00b894;padding:12px 20px;border-radius:6px;color:white;text-decoration:none;margin:5px;display:inline-block}
+.section{background:white;margin:12px;padding:25px;border-radius:12px;text-align:center}
+.section h2{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.card{background:white;border:1px solid #ddd;border-radius:12px;padding:10px}
+.card img{width:100%;border-radius:10px}
+.title{font-weight:bold;font-size:18px}
+.price{color:#00b894;font-size:17px;font-weight:bold}
+.badge{background:#00b894;color:white;padding:8px 10px;border-radius:20px;margin:3px;display:inline-block}
+.trust{background:#0a1931;color:white;padding:30px}
+footer{background:black;color:white;text-align:center;padding:12px;margin-top:20px}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;
+padding:15px;border-radius:50%;font-size:22px;text-decoration:none}
+.call{position:fixed;bottom:20px;left:20px;background:#0984e3;color:white;
+padding:15px;border-radius:50%;font-size:22px;text-decoration:none}
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>🖥️ Realtek Computers</h1>
-        <p>Your Trusted Source for Laptop Sales & Premium Spare Parts</p>
-    </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#laptops">Laptops</a>
-        <a href="#parts">Spare Parts</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<header>
+<h1>Buy Laptop Parts & Refurbished Laptops Online</h1>
+<p>Fast Delivery Across Telangana & Andhra • Warranty Included • Genuine Products</p>
+<a class="btn" href="#categories">Shop Now</a>
+<a class="btn" href="https://wa.me/9197997618505">WhatsApp Order</a>
+<a class="btn" href="tel:97997618505">Call Us</a>
+</header>
 
-    <div class="container">
-        <section id="home" class="section">
-            <h2>Welcome to Realtek Computers</h2>
-            <p>We specialize in high-quality laptop sales and authentic spare parts. Whether you're looking for a new laptop or need to repair your existing one, we have everything you need at competitive prices.</p>
-        </section>
+<div class="section" id="categories">
+<h2>Shop By Category</h2>
+<div class="grid">
 
-        <section id="laptops" class="section">
-            <h2>Featured Laptops</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="icon">💻</div>
-                    <h3>Budget Laptops</h3>
-                    <p>Perfect for students and basic computing</p>
-                    <p><strong>Starting from ₹25,000</strong></p>
-                    <button class="btn">View Models</button>
-                </div>
-                <div class="product-card">
-                    <div class="icon">🎮</div>
-                    <h3>Gaming Laptops</h3>
-                    <p>High-performance machines for gaming & design</p>
-                    <p><strong>Starting from ₹60,000</strong></p>
-                    <button class="btn">View Models</button>
-                </div>
-                <div class="product-card">
-                    <div class="icon">💼</div>
-                    <h3>Professional Laptops</h3>
-                    <p>Workstations for professionals</p>
-                    <p><strong>Starting from ₹80,000</strong></p>
-                    <button class="btn">View Models</button>
-                </div>
-            </div>
-        </section>
+<div class="card">
+<img src="https://via.placeholder.com/350x220">
+<p class="title">SSD</p>
+<p>Boost Laptop Speed Instantly</p>
+<p class="price">Starting ₹1,499</p>
+</div>
 
-        <section id="parts" class="section">
-            <h2>Available Spare Parts</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="icon">🔌</div>
-                    <h3>Batteries</h3>
-                    <p>OEM & compatible laptop batteries</p>
-                    <button class="btn">Shop Now</button>
-                </div>
-                <div class="product-card">
-                    <div class="icon">💾</div>
-                    <h3>Storage Drives</h3>
-                    <p>SSD & HDD upgrades for all models</p>
-                    <button class="btn">Shop Now</button>
-                </div>
-                <div class="product-card">
-                    <div class="icon">🌡️</div>
-                    <h3>Cooling Solutions</h3>
-                    <p>Thermal pads, cooling fans & heatsinks</p>
-                    <button class="btn">Shop Now</button>
-                </div>
-                <div class="product-card">
-                    <div class="icon">⌨️</div>
-                    <h3>Keyboards</h3>
-                    <p>Replacement keyboards for various brands</p>
-                    <button class="btn">Shop Now</button>
-                </div>
-                <div class="product-card">
-                    <div class="icon">🖱️</div>
-                    <h3>Peripherals</h3>
-                    <p>Mice, touchpads, adapters & cables</p>
-                    <button class="btn">Shop Now</button>
-                </div>
-                <div class="product-card">
-                    <div class="icon">🔧</div>
-                    <h3>Repair Services</h3>
-                    <p>Professional repair & maintenance</p>
-                    <button class="btn">Book Service</button>
-                </div>
-            </div>
-        </section>
+<div class="card">
+<img src="https://via.placeholder.com/350x220">
+<p class="title">RAM</p>
+<p>Smoother Multitasking</p>
+<p class="price">Starting ₹899</p>
+</div>
 
-        <section id="contact" class="section">
-            <h2>Get in Touch</h2>
-            <div class="contact">
-                <p><strong>Realtek Computers</strong></p>
-                <p>📍 Location: Hyderabad, India</p>
-                <p>📞 Phone: +91-XXXXXXXXXX</p>
-                <p>📧 Email: info@realtekcomputers.store</p>
-                <p>⏰ Working Hours: Monday - Saturday, 10 AM - 7 PM</p>
-                <p>✨ We offer chip-level laptop repair & custom configuration services</p>
-            </div>
-        </section>
-    </div>
+<div class="card">
+<img src="https://via.placeholder.com/350x220">
+<p class="title">Laptop Batteries</p>
+<p>Long Backup & Safe Power</p>
+<p class="price">Starting ₹1,999</p>
+</div>
 
-    <footer>
-        <p>&copy; 2025 Realtek Computers. All rights reserved.</p>
-        <p>Specializing in Laptop Sales, Spare Parts & Chip-Level Repair</p>
-    </footer>
+<div class="card">
+<img src="https://via.placeholder.com/350x220">
+<p class="title">Laptop Screens</p>
+<p>HD / Full HD Displays</p>
+<p class="price">Starting ₹2,999</p>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/350x220">
+<p class="title">Power Jacks</p>
+<p>Charging Port Replacements</p>
+<p class="price">Best Price</p>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/350x220">
+<p class="title">Laptop Adapters</p>
+<p>Original & Safe Chargers</p>
+<p class="price">Starting ₹899</p>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/350x220">
+<p class="title">Refurbished Laptops</p>
+<p>Budget Friendly & Reliable</p>
+<p class="price">Great Deals Available</p>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Delivery Across Telangana & Andhra Pradesh</h2>
+<p>Hyderabad • Warangal • Vijayawada • Vizag • Tirupati • Guntur • Nellore & More</p>
+<p>✔ Safe Packaging ✔ Fast Dispatch ✔ Warranty Support</p>
+</div>
+
+<div class="trust">
+<h2>Why Choose Realtek Computers?</h2>
+<span class="badge">Original Tested Parts</span>
+<span class="badge">Warranty On Every Product</span>
+<span class="badge">Best Price Guarantee</span>
+<span class="badge">Fast Delivery</span>
+<span class="badge">Service Support Available</span>
+</div>
+
+<div class="section">
+<h2>Happy Customers</h2>
+<p>"Bought SSD & battery — fast delivery and excellent quality!" – Hyderabad</p>
+<p>"Screen replacement delivered in 2 days to Vijayawada. Perfect!" – AP Customer</p>
+</div>
+
+<footer>
+<p>Realtek Computers • Miyapur Hyderabad</p>
+<p>Call: 97997 618505 | WhatsApp Available</p>
+</footer>
+
+<a href="https://wa.me/9197997618505" class="whatsapp">💬</a>
+<a href="tel:97997618505" class="call">📞</a>
+
 </body>
 </html>
