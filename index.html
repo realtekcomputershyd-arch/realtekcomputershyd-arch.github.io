@@ -149,6 +149,85 @@ body{
   }
 }
 
+
+  /* ===== SERVICE ACCORDION ===== */
+.accordion{
+  max-width:1000px;
+  margin:0 auto;
+}
+
+.accordion-item{
+  background:#ffffff;
+  border-radius:14px;
+  margin-bottom:12px;
+  border:1px solid #ddd;
+  overflow:hidden;
+}
+
+.accordion-header{
+  padding:18px;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+  background:linear-gradient(to right,#0a1931,#1e3c72);
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.accordion-header span{
+  font-size:22px;
+}
+
+.accordion-content{
+  display:none;
+  padding:18px;
+  background:#f9fbff;
+}
+
+.accordion-content p{
+  margin:6px 0;
+}
+
+/* ===== BOOK FORM ===== */
+.book-form{
+  background:linear-gradient(135deg,#e8f3ff,#f6f0ff);
+  border-radius:18px;
+  padding:30px;
+  margin-top:30px;
+  text-align:center;
+}
+
+.book-form input,
+.book-form textarea,
+.book-form select{
+  width:100%;
+  padding:12px;
+  margin:8px 0;
+  border-radius:8px;
+  border:1px solid #ccc;
+  font-size:16px;
+}
+
+.book-form button{
+  background:#25D366;
+  color:white;
+  padding:14px 30px;
+  border:none;
+  border-radius:30px;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .accordion-header{
+    font-size:16px;
+  }
+}
+
 /* ================= TRUST STRIP ================= */
 .trust-strip{
   background:#0a1931;
@@ -217,6 +296,41 @@ th{
   50%{transform:translateY(-6px);}
   100%{transform:translateY(0);}
 }
+  <script>
+/* ACCORDION */
+document.querySelectorAll(".accordion-header").forEach(header=>{
+  header.addEventListener("click",()=>{
+    const content = header.nextElementSibling;
+    const icon = header.querySelector("span");
+
+    if(content.style.display==="block"){
+      content.style.display="none";
+      icon.textContent="+";
+    }else{
+      content.style.display="block";
+      icon.textContent="−";
+    }
+  });
+});
+
+/* WHATSAPP FORM */
+function sendWhatsApp(){
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const service = document.getElementById("service").value;
+  const msg = document.getElementById("message").value;
+
+  const text =
+    "Service Booking%0A"+
+    "Name: "+name+"%0A"+
+    "Phone: "+phone+"%0A"+
+    "Service: "+service+"%0A"+
+    "Issue: "+msg;
+
+  window.open("https://wa.me/917997618505?text="+text,"_blank");
+}
+</script>
+
 
 /* ================= FOOTER ================= */
 footer{
@@ -376,6 +490,93 @@ footer{
   <p style="margin-top:15px;font-size:14px;color:#555;">
     💡 Final price depends on laptop model & issue severity. Contact us for exact quote.
   </p>
+</div>
+
+  <!-- ================= SERVICE ACCORDION ================= -->
+<div class="section">
+  <h2>🛠️ Laptop Repair Services & Pricing</h2>
+  <p>Tap a category to view services & prices</p>
+
+  <div class="accordion">
+
+    <!-- HARDWARE -->
+    <div class="accordion-item">
+      <div class="accordion-header">
+        🔧 Hardware Repairs <span>+</span>
+      </div>
+      <div class="accordion-content">
+        <p>Screen Replacement – ₹3,000 – ₹8,000</p>
+        <p>Keyboard Replacement – ₹1,500 – ₹3,000</p>
+        <p>Battery Replacement – ₹2,000 – ₹5,000</p>
+        <p>Motherboard Repair – ₹4,000 – ₹10,000+</p>
+        <p>Power Jack Repair – ₹1,000 – ₹3,000</p>
+        <p>Liquid Damage Repair – ₹2,000 – ₹8,000</p>
+        <a class="buy" href="https://wa.me/917997618505">Book Hardware Repair</a>
+      </div>
+    </div>
+
+    <!-- UPGRADES -->
+    <div class="accordion-item">
+      <div class="accordion-header">
+        🚀 Upgrade Services <span>+</span>
+      </div>
+      <div class="accordion-content">
+        <p>RAM Upgrade – ₹1,000 – ₹3,000</p>
+        <p>HDD / SSD Upgrade – ₹2,000 – ₹6,000</p>
+        <p>Wi-Fi Card Replacement – ₹1,000 – ₹2,500</p>
+        <p>CMOS Battery – ₹500 – ₹1,500</p>
+        <a class="buy" href="https://wa.me/917997618505">Book Upgrade</a>
+      </div>
+    </div>
+
+    <!-- SOFTWARE -->
+    <div class="accordion-item">
+      <div class="accordion-header">
+        🛡️ Software Services <span>+</span>
+      </div>
+      <div class="accordion-content">
+        <p>Virus Removal – ₹500 – ₹2,000</p>
+        <p>OS Installation – ₹1,000 – ₹2,500</p>
+        <p>Driver Installation – ₹500 – ₹1,500</p>
+        <p>BIOS / UEFI Update – ₹500 – ₹1,500</p>
+        <a class="buy" href="https://wa.me/917997618505">Book Software Service</a>
+      </div>
+    </div>
+
+    <!-- CLEANING -->
+    <div class="accordion-item">
+      <div class="accordion-header">
+        🧹 Cleaning & Maintenance <span>+</span>
+      </div>
+      <div class="accordion-content">
+        <p>Internal Dust Cleaning – ₹500 – ₹1,500</p>
+        <p>Cooling System Cleaning – ₹500 – ₹1,500</p>
+        <p>Performance Checkup – ₹500 – ₹1,500</p>
+        <a class="buy" href="https://wa.me/917997618505">Book Cleaning</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================= BOOK APPOINTMENT ================= -->
+  <div class="book-form">
+    <h2>📅 Book Laptop Service</h2>
+    <p>Fill details & we’ll contact you shortly</p>
+
+    <form onsubmit="sendWhatsApp();return false;">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="tel" id="phone" placeholder="Mobile Number" required>
+      <select id="service">
+        <option>Screen Issue</option>
+        <option>Battery Issue</option>
+        <option>Slow Laptop</option>
+        <option>Software Problem</option>
+        <option>Other</option>
+      </select>
+      <textarea id="message" placeholder="Describe your problem"></textarea>
+      <button type="submit">📲 Book via WhatsApp</button>
+    </form>
+  </div>
 </div>
 
 
