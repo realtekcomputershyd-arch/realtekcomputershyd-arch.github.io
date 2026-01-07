@@ -2,694 +2,187 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Realtek Computers | Laptop Repair & Services</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Realtek Computers | Laptop Repair & Refurbished Laptops in Miyapur</title>
+
+<meta name="description" content="Realtek Computers provides professional laptop repair, refurbished laptops, SSD & RAM upgrades in Miyapur, Hyderabad. Call now for fast service.">
 
 <style>
-body{
-  margin:0;
-  font-family:Arial, Helvetica, sans-serif;
-  background:#f4f6f8;
-  color:#222;
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+header {
+    background: #0b3c5d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+header p {
+    margin: 10px 0 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 18px;
+    margin: 5px;
+    background: #ff9800;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btn.whatsapp {
+    background: #25D366;
+    color: #fff;
 }
 
-/* ================= HERO ================= */
-.hero{
-  background:#0a1931;
-  color:white;
-  text-align:center;
-  padding:70px 20px;
-}
-.brand-title{font-size:42px;font-weight:900;margin:0;}
-.brand-sub{font-size:22px;color:#dcdcdc;margin:8px 0 12px;}
-.highlight{background:#00b894;padding:6px 14px;border-radius:20px;font-weight:bold;}
-.hero-buttons a{
-  display:inline-block;margin:8px;padding:12px 24px;
-  background:#00b894;color:white;text-decoration:none;
-  border-radius:6px;font-weight:bold;
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    margin-top: 20px;
+    border-radius: 8px;
 }
 
-/* ================= GENERIC ================= */
-.section{
-  background:white;
-  margin:14px;
-  padding:28px;
-  border-radius:16px;
-  text-align:center;
-}
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:16px;
-}
-.card{
-  border:1px solid #ddd;
-  border-radius:14px;
-  padding:14px;
-  background:#fff;
-}
-.buy{
-  display:inline-block;
-  margin-top:10px;
-  background:#25D366;
-  color:white;
-  padding:10px 18px;
-  border-radius:6px;
-  text-decoration:none;
-  font-weight:bold;
+h2 {
+    text-align: center;
+    color: #0b3c5d;
 }
 
-/* ================= SERVICE HERO ================= */
-.service-hero{
-  background:linear-gradient(to right,#f6f0ff,#e8f3ff);
-  margin:14px;
-  padding:35px;
-  border-radius:18px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:20px;
-  align-items:center;
+.services, .features, .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
-  /* ===== SERVICE ACCORDION ===== */
-.accordion{
-  max-width:1000px;
-  margin:0 auto;
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 6px;
+    background: #fafafa;
+    text-align: center;
 }
 
-.accordion-item{
-  background:#ffffff;
-  border-radius:14px;
-  margin-bottom:12px;
-  border:1px solid #ddd;
-  overflow:hidden;
+.card h3 {
+    margin-top: 0;
+    color: #333;
 }
 
-.accordion-header{
-  padding:18px;
-  font-size:18px;
-  font-weight:bold;
-  cursor:pointer;
-  background:linear-gradient(to right,#0a1931,#1e3c72);
-  color:white;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e91e63;
 }
 
-.accordion-header span{
-  font-size:22px;
+footer {
+    background: #0b3c5d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
 }
-
-.accordion-content{
-  display:none;
-  padding:18px;
-  background:#f9fbff;
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 10px;
 }
-
-.accordion-content p{
-  margin:6px 0;
-}
-
-/* ===== BOOK FORM ===== */
-.book-form{
-  background:linear-gradient(135deg,#e8f3ff,#f6f0ff);
-  border-radius:18px;
-  padding:30px;
-  margin-top:30px;
-  text-align:center;
-}
-
-.book-form input,
-.book-form textarea,
-.book-form select{
-  width:100%;
-  padding:12px;
-  margin:8px 0;
-  border-radius:8px;
-  border:1px solid #ccc;
-  font-size:16px;
-}
-
-.book-form button{
-  background:#25D366;
-  color:white;
-  padding:14px 30px;
-  border:none;
-  border-radius:30px;
-  font-size:18px;
-  font-weight:bold;
-  cursor:pointer;
-}
-
-/* MOBILE */
-@media(max-width:600px){
-  .accordion-header{
-    font-size:16px;
-  }
-}
-
-
-  /* ===== SERVICE ACCORDION ===== */
-.accordion{
-  max-width:1000px;
-  margin:0 auto;
-}
-
-.accordion-item{
-  background:#ffffff;
-  border-radius:14px;
-  margin-bottom:12px;
-  border:1px solid #ddd;
-  overflow:hidden;
-}
-
-.accordion-header{
-  padding:18px;
-  font-size:18px;
-  font-weight:bold;
-  cursor:pointer;
-  background:linear-gradient(to right,#0a1931,#1e3c72);
-  color:white;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.accordion-header span{
-  font-size:22px;
-}
-
-.accordion-content{
-  display:none;
-  padding:18px;
-  background:#f9fbff;
-}
-
-.accordion-content p{
-  margin:6px 0;
-}
-
-/* ===== BOOK FORM ===== */
-.book-form{
-  background:linear-gradient(135deg,#e8f3ff,#f6f0ff);
-  border-radius:18px;
-  padding:30px;
-  margin-top:30px;
-  text-align:center;
-}
-
-.book-form input,
-.book-form textarea,
-.book-form select{
-  width:100%;
-  padding:12px;
-  margin:8px 0;
-  border-radius:8px;
-  border:1px solid #ccc;
-  font-size:16px;
-}
-
-.book-form button{
-  background:#25D366;
-  color:white;
-  padding:14px 30px;
-  border:none;
-  border-radius:30px;
-  font-size:18px;
-  font-weight:bold;
-  cursor:pointer;
-}
-
-/* MOBILE */
-@media(max-width:600px){
-  .accordion-header{
-    font-size:16px;
-  }
-}
-
-/* ================= TRUST STRIP ================= */
-.trust-strip{
-  background:#0a1931;
-  color:white;
-  padding:30px 20px;
-  margin:14px;
-  border-radius:16px;
-}
-.trust-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:14px;
-  font-size:16px;
-}
-
-/* ================= PRICING TABLE ================= */
-table{
-  width:100%;
-  border-collapse:collapse;
-  font-size:15px;
-}
-th,td{
-  padding:10px;
-  border:1px solid #ddd;
-  text-align:left;
-}
-th{
-  background:#0a1931;
-  color:white;
-}
-
-/* ================= BRANDS ================= */
-.brands-section{
-  background:linear-gradient(135deg,#0a1931,#1e3c72);
-  color:white;
-  margin:14px;
-  padding:40px 20px;
-  border-radius:20px;
-  text-align:center;
-}
-.brands-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
-  gap:15px;
-  margin-top:20px;
-}
-.brand{
-  background:rgba(255,255,255,0.12);
-  padding:14px;
-  border-radius:14px;
-  font-weight:bold;
-  backdrop-filter:blur(6px);
-  transition:transform 0.3s ease;
-}
-.brand:hover{transform:translateY(-6px) scale(1.05);}
-.glow{animation:glowPulse 2.5s infinite;}
-.float{animation:floatMove 3s infinite;}
-
-@keyframes glowPulse{
-  0%{box-shadow:0 0 6px rgba(0,255,200,0.4);}
-  50%{box-shadow:0 0 18px rgba(0,255,200,0.9);}
-  100%{box-shadow:0 0 6px rgba(0,255,200,0.4);}
-}
-@keyframes floatMove{
-  0%{transform:translateY(0);}
-  50%{transform:translateY(-6px);}
-  100%{transform:translateY(0);}
-}
-  <script>
-/* ACCORDION */
-document.querySelectorAll(".accordion-header").forEach(header=>{
-  header.addEventListener("click",()=>{
-    const content = header.nextElementSibling;
-    const icon = header.querySelector("span");
-
-    if(content.style.display==="block"){
-      content.style.display="none";
-      icon.textContent="+";
-    }else{
-      content.style.display="block";
-      icon.textContent="−";
-    }
-  });
-});
-
-/* WHATSAPP FORM */
-function sendWhatsApp(){
-  const name = document.getElementById("name").value;
-  const phone = document.getElementById("phone").value;
-  const service = document.getElementById("service").value;
-  const msg = document.getElementById("message").value;
-
-  const text =
-    "Service Booking%0A"+
-    "Name: "+name+"%0A"+
-    "Phone: "+phone+"%0A"+
-    "Service: "+service+"%0A"+
-    "Issue: "+msg;
-
-  window.open("https://wa.me/917997618505?text="+text,"_blank");
-}
-</script>
-
-
-/* ================= FOOTER ================= */
-footer{
-  background:#000;
-  color:white;
-  text-align:center;
-  padding:14px;
-}
-
-/* FLOAT BUTTONS */
-.whatsapp{
-  position:fixed;bottom:20px;right:20px;
-  background:#25D366;color:white;
-  padding:15px;border-radius:50%;
-  font-size:22px;text-decoration:none;
-}
-.call{
-  position:fixed;bottom:20px;left:20px;
-  background:#0984e3;color:white;
-  padding:15px;border-radius:50%;
-  font-size:22px;text-decoration:none;
+.map {
+    width: 100%;
+    height: 300px;
+    border: none;
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<header class="hero">
-  <h1 class="brand-title">Realtek Computers</h1>
-  <p class="brand-sub">Professional Laptop Repair & Services</p>
-  <p><span class="highlight">Telangana & Andhra Pradesh</span></p>
-  <div class="hero-buttons">
-    <a href="#services">Service Pricing</a>
-    <a href="https://wa.me/917997618505">WhatsApp</a>
-    <a href="tel:+917997618505">Call Now</a>
-  </div>
+<header>
+    <h1>Realtek Computers</h1>
+    <p>Laptop Repair & Refurbished Laptops in Miyapur, Hyderabad</p>
+    <a class="btn" href="tel:07997618505">📞 Call Now</a>
+    <a class="btn whatsapp" href="https://wa.me/917997618505">💬 WhatsApp</a>
 </header>
 
-<!-- SERVICE HERO -->
-<section class="service-hero">
-  <div style="text-align:center">
-    <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?w=700"
-         style="width:95%;border-radius:16px;">
-  </div>
-  <div>
-    <h2>Fast & Reliable Laptop Repair</h2>
-    <p>Certified Technicians • Same-Day Service • Warranty Support</p>
-    <ul style="text-align:left;line-height:1.7">
-      <li>✅ Certified Technicians</li>
-      <li>🔒 Secure Booking (SSL)</li>
-      <li>🕑 4-Hour Service Guarantee</li>
-      <li>⭐ 30-Day Repair Warranty</li>
-      <li>💬 Google 4.9+ Reviews</li>
-    </ul>
-    <a class="buy" href="https://wa.me/917997618505">📲 Book via WhatsApp</a>
-  </div>
+<section>
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">Laptop Repair & Service</div>
+        <div class="card">Laptop Not Turning On Fix</div>
+        <div class="card">SSD & RAM Upgrade</div>
+        <div class="card">Windows 10 / 11 Installation</div>
+        <div class="card">Laptop Overheating Repair</div>
+        <div class="card">Motherboard Repair</div>
+    </div>
 </section>
 
-<!-- TRUST STRIP -->
-<div class="trust-strip">
-  <div class="trust-grid">
-    <div>✅ Certified Technicians</div>
-    <div>🔒 Secure Booking (SSL)</div>
-    <div>🕑 4-Hour Service Guarantee</div>
-    <div>⭐ 30-Day Repair Warranty</div>
-    <div>💬 Google 4.9+ Reviews</div>
-    <div>📲 Book via WhatsApp</div>
-  </div>
-</div>
-
- <!-- ================= REFURBISHED LAPTOPS SECTION ================= -->
-<section id="refurbished" class="refurb-section">
-  <h2>♻️ Refurbished Laptops for Sale</h2>
-  <p>Certified • Tested • Warranty Included • Best Deals Across Telangana & Andhra</p>
-
-  <div class="refurb-grid">
-
-    <div class="refurb-card">
-      <img src="https://via.placeholder.com/400x250" alt="Refurbished Dell Latitude">
-      <p class="refurb-title">Dell Latitude (Refurbished)</p>
-      <p class="refurb-spec">Intel i5 • 8GB RAM • 256GB SSD<br>Windows 11 • Great Condition</p>
-      <div class="refurb-badges">
-        <span>✔ Tested</span><span>✔ Warranty</span><span>✔ Genuine Parts</span>
-      </div>
-      <p class="refurb-price">From ₹22,999</p>
-      <a class="refurb-buy"
-         href="https://wa.me/917997618505?text=Hi%2C%20I%20am%20interested%20in%20Dell%20Refurbished%20Laptop">
-         📲 Enquire on WhatsApp
-      </a>
+<section>
+    <h2>Refurbished Laptops</h2>
+    <div class="products">
+        <div class="card">
+            <h3>Refurbished Laptop – Brand New Look</h3>
+            <p class="price">₹21,999/-</p>
+            <p>✔ 256GB SSD</p>
+            <p>✔ 30 Days Warranty</p>
+            <p>✔ Fully Tested</p>
+            <p>✔ Original Charger</p>
+        </div>
     </div>
-
-    <div class="refurb-card">
-      <img src="https://via.placeholder.com/400x250" alt="Refurbished HP EliteBook">
-      <p class="refurb-title">HP EliteBook (Refurbished)</p>
-      <p class="refurb-spec">Intel i5 • 8GB RAM • 512GB SSD<br>Business Series • Clean Build</p>
-      <div class="refurb-badges">
-        <span>✔ Quality Checked</span><span>✔ Warranty</span>
-      </div>
-      <p class="refurb-price">From ₹24,999</p>
-      <a class="refurb-buy"
-         href="https://wa.me/917997618505?text=Hi%2C%20I%20am%20interested%20in%20HP%20Refurbished%20Laptop">
-         📲 Enquire on WhatsApp
-      </a>
-    </div>
-
-    <div class="refurb-card">
-      <img src="https://via.placeholder.com/400x250" alt="Refurbished Lenovo ThinkPad">
-      <p class="refurb-title">Lenovo ThinkPad (Refurbished)</p>
-      <p class="refurb-spec">Intel i7 • 16GB RAM • 512GB SSD<br>Performance Laptop</p>
-      <div class="refurb-badges">
-        <span>✔ Performance Tested</span><span>✔ Warranty</span>
-      </div>
-      <p class="refurb-price">From ₹32,999</p>
-      <a class="refurb-buy"
-         href="https://wa.me/917997618505?text=Hi%2C%20I%20am%20interested%20in%20Lenovo%20Refurbished%20Laptop">
-         📲 Enquire on WhatsApp
-      </a>
-    </div>
-
-  </div>
-
-  <p style="margin-top:15px;font-size:14px;color:#555;">
-    💡 Bulk orders available for students, offices & businesses.
-  </p>
+    <p style="text-align:center; font-size:14px;">
+        All refurbished laptops are professionally tested and certified.
+    </p>
 </section>
 
-  <!-- ================= CATEGORY WISE SERVICES ================= -->
-<div class="section" id="service-categories">
-  <h2>🛠️ Laptop Repair Services & Pricing</h2>
-  <p>Choose your service category to get quick help</p>
+<section>
+    <h2>Why Choose Realtek Computers</h2>
+    <div class="features">
+        <div class="card">10+ Years Experience</div>
+        <div class="card">Genuine Parts Used</div>
+        <div class="card">Transparent Pricing</div>
+        <div class="card">Fast Same-Day Service</div>
+        <div class="card">Local Store in Miyapur</div>
+    </div>
+</section>
 
-  <div class="grid">
-
-    <!-- HARDWARE REPAIRS -->
+<section>
+    <h2>Customer Reviews</h2>
     <div class="card">
-      <h3>🔧 Hardware Repairs</h3>
-      <p>Screen Replacement – ₹3,000 – ₹8,000</p>
-      <p>Keyboard Replacement – ₹1,500 – ₹3,000</p>
-      <p>Battery Replacement – ₹2,000 – ₹5,000</p>
-      <p>Motherboard Repair / Replacement – ₹4,000 – ₹10,000+</p>
-      <p>Power Jack Replacement – ₹1,000 – ₹3,000</p>
-      <p>Fan Replacement – ₹1,000 – ₹3,000</p>
-      <p>Liquid Damage Repair – ₹2,000 – ₹8,000</p>
-
-      <a class="buy" href="https://wa.me/917997618505?text=Hi%2C%20I%20need%20hardware%20repair%20service%20for%20my%20laptop">
-        🔧 Book Hardware Repair
-      </a>
+        ⭐⭐⭐⭐⭐ <br>
+        Very good service, honest pricing and fast work. Highly recommended.
     </div>
-
-    <!-- UPGRADE SERVICES -->
     <div class="card">
-      <h3>🚀 Upgrade Services</h3>
-      <p>RAM Upgrade – ₹1,000 – ₹3,000</p>
-      <p>Hard Drive / SSD Upgrade – ₹2,000 – ₹6,000</p>
-      <p>CMOS Battery Replacement – ₹500 – ₹1,500</p>
-      <p>Wi-Fi Card Replacement – ₹1,000 – ₹2,500</p>
-      <p>Optical Drive Replacement – ₹1,000 – ₹2,500</p>
-
-      <a class="buy" href="https://wa.me/917997618505?text=Hi%2C%20I%20need%20laptop%20upgrade%20service">
-        🚀 Book Upgrade Service
-      </a>
+        ⭐⭐⭐⭐⭐ <br>
+        My laptop works like new now. Thank you Realtek Computers.
     </div>
+</section>
 
-    <!-- SOFTWARE SERVICES -->
-    <div class="card">
-      <h3>🛡️ Software Services</h3>
-      <p>Virus Removal & Cleanup – ₹500 – ₹2,000</p>
-      <p>OS Installation / Upgrade – ₹1,000 – ₹2,500</p>
-      <p>Antivirus Installation – ₹500 – ₹1,500</p>
-      <p>Driver Installation / Update – ₹500 – ₹1,500</p>
-      <p>System Restore – ₹500 – ₹1,500</p>
-      <p>BIOS / UEFI Update – ₹500 – ₹1,500</p>
+<section>
+    <h2>Contact & Location</h2>
+    <p style="text-align:center;">
+        📞 Phone: 07997 618 505 <br>
+        📧 Email: realtekcomputers.hyd@gmail.com <br>
+        📍 Miyapur, Hyderabad
+    </p>
 
-      <a class="buy" href="https://wa.me/917997618505?text=Hi%2C%20I%20need%20software%20service%20for%20my%20laptop">
-        🛡️ Book Software Service
-      </a>
-    </div>
-
-    <!-- CLEANING & MAINTENANCE -->
-    <div class="card">
-      <h3>🧹 Cleaning & Maintenance</h3>
-      <p>Internal Dust Cleaning – ₹500 – ₹1,500</p>
-      <p>Cooling System Cleaning – ₹500 – ₹1,500</p>
-      <p>Keyboard Cleaning – ₹500 – ₹1,500</p>
-      <p>System Tune-Up – ₹500 – ₹1,500</p>
-      <p>Performance Checkup – ₹500 – ₹1,500</p>
-      <p>Battery Calibration – ₹500 – ₹1,500</p>
-
-      <a class="buy" href="https://wa.me/917997618505?text=Hi%2C%20I%20need%20laptop%20cleaning%20service">
-        🧹 Book Cleaning Service
-      </a>
-    </div>
-
-    <!-- PORTS & ACCESSORIES -->
-    <div class="card">
-      <h3>🔌 Ports & Accessories</h3>
-      <p>USB Port Repair – ₹500 – ₹1,500</p>
-      <p>HDMI Port Repair – ₹500 – ₹1,500</p>
-      <p>SD Card Reader Repair – ₹500 – ₹1,500</p>
-      <p>Webcam Repair / Replacement – ₹1,000 – ₹2,500</p>
-      <p>Touchpad Repair / Replacement – ₹1,000 – ₹2,500</p>
-      <p>Speaker Repair / Replacement – ₹1,000 – ₹3,000</p>
-      <p>Keyboard Key Replacement – ₹100 – ₹500 per key</p>
-
-      <a class="buy" href="https://wa.me/917997618505?text=Hi%2C%20I%20need%20port%20or%20accessory%20repair%20service">
-        🔌 Book Port Repair
-      </a>
-    </div>
-
-  </div>
-
-  <p style="margin-top:15px;font-size:14px;color:#555;">
-    💡 Final price depends on laptop model & issue severity. Contact us for exact quote.
-  </p>
-</div>
-
-  <!-- ================= SERVICE ACCORDION ================= -->
-<div class="section">
-  <h2>🛠️ Laptop Repair Services & Pricing</h2>
-  <p>Tap a category to view services & prices</p>
-
-  <div class="accordion">
-
-    <!-- HARDWARE -->
-    <div class="accordion-item">
-      <div class="accordion-header">
-        🔧 Hardware Repairs <span>+</span>
-      </div>
-      <div class="accordion-content">
-        <p>Screen Replacement – ₹3,000 – ₹8,000</p>
-        <p>Keyboard Replacement – ₹1,500 – ₹3,000</p>
-        <p>Battery Replacement – ₹2,000 – ₹5,000</p>
-        <p>Motherboard Repair – ₹4,000 – ₹10,000+</p>
-        <p>Power Jack Repair – ₹1,000 – ₹3,000</p>
-        <p>Liquid Damage Repair – ₹2,000 – ₹8,000</p>
-        <a class="buy" href="https://wa.me/917997618505">Book Hardware Repair</a>
-      </div>
-    </div>
-
-    <!-- UPGRADES -->
-    <div class="accordion-item">
-      <div class="accordion-header">
-        🚀 Upgrade Services <span>+</span>
-      </div>
-      <div class="accordion-content">
-        <p>RAM Upgrade – ₹1,000 – ₹3,000</p>
-        <p>HDD / SSD Upgrade – ₹2,000 – ₹6,000</p>
-        <p>Wi-Fi Card Replacement – ₹1,000 – ₹2,500</p>
-        <p>CMOS Battery – ₹500 – ₹1,500</p>
-        <a class="buy" href="https://wa.me/917997618505">Book Upgrade</a>
-      </div>
-    </div>
-
-    <!-- SOFTWARE -->
-    <div class="accordion-item">
-      <div class="accordion-header">
-        🛡️ Software Services <span>+</span>
-      </div>
-      <div class="accordion-content">
-        <p>Virus Removal – ₹500 – ₹2,000</p>
-        <p>OS Installation – ₹1,000 – ₹2,500</p>
-        <p>Driver Installation – ₹500 – ₹1,500</p>
-        <p>BIOS / UEFI Update – ₹500 – ₹1,500</p>
-        <a class="buy" href="https://wa.me/917997618505">Book Software Service</a>
-      </div>
-    </div>
-
-    <!-- CLEANING -->
-    <div class="accordion-item">
-      <div class="accordion-header">
-        🧹 Cleaning & Maintenance <span>+</span>
-      </div>
-      <div class="accordion-content">
-        <p>Internal Dust Cleaning – ₹500 – ₹1,500</p>
-        <p>Cooling System Cleaning – ₹500 – ₹1,500</p>
-        <p>Performance Checkup – ₹500 – ₹1,500</p>
-        <a class="buy" href="https://wa.me/917997618505">Book Cleaning</a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- ================= BOOK APPOINTMENT ================= -->
-  <div class="book-form">
-    <h2>📅 Book Laptop Service</h2>
-    <p>Fill details & we’ll contact you shortly</p>
-
-    <form onsubmit="sendWhatsApp();return false;">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="tel" id="phone" placeholder="Mobile Number" required>
-      <select id="service">
-        <option>Screen Issue</option>
-        <option>Battery Issue</option>
-        <option>Slow Laptop</option>
-        <option>Software Problem</option>
-        <option>Other</option>
-      </select>
-      <textarea id="message" placeholder="Describe your problem"></textarea>
-      <button type="submit">📲 Book via WhatsApp</button>
-    </form>
-  </div>
-</div>
-
-
-<!-- FULL SERVICE PRICE LIST (UNCHANGED PRICES) -->
-<div class="section" id="services">
-<h2>💰 Laptop Service Price List</h2>
-
-<table>
-<tr><th>Service</th><th>Estimated Cost</th></tr>
-<tr><td>🔧 Screen Replacement</td><td>₹3,000 – ₹8,000</td></tr>
-<tr><td>⌨️ Keyboard Replacement</td><td>₹1,500 – ₹3,000</td></tr>
-<tr><td>🔋 Battery Replacement</td><td>₹2,000 – ₹5,000</td></tr>
-<tr><td>💽 Hard Drive Replacement</td><td>₹2,000 – ₹6,000</td></tr>
-<tr><td>🧠 RAM Upgrade</td><td>₹1,000 – ₹3,000</td></tr>
-<tr><td>🖥️ Motherboard Repair / Replacement</td><td>₹4,000 – ₹10,000+</td></tr>
-<tr><td>🦠 Virus Removal & Software Cleanup</td><td>₹500 – ₹2,000</td></tr>
-<tr><td>💾 Data Recovery</td><td>₹1,500 – ₹5,000</td></tr>
-<tr><td>🔌 Power Jack Replacement</td><td>₹1,000 – ₹3,000</td></tr>
-<tr><td>🌀 Fan Replacement</td><td>₹1,000 – ₹3,000</td></tr>
-<tr><td>💧 Liquid Damage Repair</td><td>₹2,000 – ₹8,000</td></tr>
-<tr><td>📸 Webcam Replacement</td><td>₹1,000 – ₹2,500</td></tr>
-<tr><td>🖱️ Touchpad Replacement</td><td>₹1,000 – ₹2,500</td></tr>
-<tr><td>⌨️ Keyboard Key Replacement</td><td>₹100 – ₹500 / key</td></tr>
-</table>
-
-<p style="font-size:14px;color:#555;margin-top:10px;">
-*Final pricing depends on laptop model & condition
-</p>
-</div>
-
-<!-- BRANDS -->
-<section class="brands-section">
-<h2>💻 Brands We Repair</h2>
-<div class="brands-grid">
-  <div class="brand glow">Dell</div>
-  <div class="brand float">HP</div>
-  <div class="brand glow">Lenovo</div>
-  <div class="brand float">Asus</div>
-  <div class="brand glow">Acer</div>
-  <div class="brand float">MSI</div>
-  <div class="brand glow">Apple MacBook</div>
-  <div class="brand float">Samsung</div>
-  <div class="brand glow">Sony</div>
-  <div class="brand float">Toshiba</div>
-  <div class="brand glow">LG</div>
-  <div class="brand float">Microsoft Surface</div>
-</div>
-<a class="buy" href="https://wa.me/917997618505" style="margin-top:20px;">📲 Ask About Your Brand</a>
+    <iframe class="map"
+        src="https://www.google.com/maps?q=Miyapur%20Hyderabad&output=embed">
+    </iframe>
 </section>
 
 <footer>
-<p>Realtek Computers • Miyapur, Hyderabad</p>
-<p>📞 +91 79976 18505</p>
+    <p>© 2026 Realtek Computers</p>
+    <p>
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms & Conditions</a> |
+        <a href="#">Refund Policy</a>
+    </p>
 </footer>
-
-<a href="https://wa.me/917997618505" class="whatsapp">💬</a>
-<a href="tel:+917997618505" class="call">📞</a>
 
 </body>
 </html>
