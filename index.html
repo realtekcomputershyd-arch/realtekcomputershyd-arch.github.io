@@ -3,261 +3,246 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Realtek Computers | Laptop Repair & Refurbished Laptops in Miyapur</title>
 
-<meta name="description" content="Realtek Computers offers professional laptop repair and refurbished laptops in Miyapur, Hyderabad. SSD upgrades, RAM upgrades, Windows installation.">
+<title>Realtek Computers | Computer Sales & Laptop Repair – Telangana & Andhra Pradesh</title>
+
+<meta name="description" content="Realtek Computers provides computer sales, refurbished laptops, laptop repair, SSD, RAM, accessories and services for customers across Telangana and Andhra Pradesh. Order via website or WhatsApp.">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f6f8;
-    color: #333;
+body{
+    margin:0;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#f4f6f8;
+    color:#333;
 }
 
-/* HEADER */
-header {
-    background: #0b3c5d;
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
+/* HERO */
+.hero{
+    background:linear-gradient(rgba(11,60,93,0.85),rgba(11,60,93,0.85)),
+    url('hero.jpg');
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
 }
-header h1 {
-    margin: 0;
-    font-size: 30px;
+.hero h1{
+    font-size:48px;
+    margin:0;
+    letter-spacing:1px;
 }
-header p {
-    margin: 10px 0 20px;
+.hero p{
+    font-size:18px;
+    max-width:900px;
+    margin:20px auto 30px;
 }
-.btn {
-    display: inline-block;
-    padding: 12px 18px;
-    margin: 5px;
-    background: #ff9800;
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
+.btn{
+    display:inline-block;
+    padding:14px 22px;
+    margin:6px;
+    background:#ff9800;
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:6px;
 }
-.btn.whatsapp {
-    background: #25D366;
-    color: #fff;
+.btn.whatsapp{
+    background:#25D366;
+    color:#fff;
 }
 
 /* SECTIONS */
-section {
-    padding: 45px 20px;
-    max-width: 1150px;
-    margin: 25px auto;
-    background: #ffffff;
-    border-radius: 10px;
+section{
+    max-width:1200px;
+    margin:40px auto;
+    background:#fff;
+    padding:45px 25px;
+    border-radius:12px;
+}
+h2{
+    text-align:center;
+    color:#0b3c5d;
+    margin-bottom:30px;
 }
 
-h2 {
-    text-align: center;
-    color: #0b3c5d;
-    margin-bottom: 30px;
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:22px;
+}
+.card{
+    background:#fafafa;
+    border:1px solid #ddd;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    font-weight:600;
 }
 
-/* SERVICES */
-.services, .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 20px;
-}
-.card {
-    background: #fafafa;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    border: 1px solid #ddd;
+/* SALES */
+.sale-card{
+    background:#ffffff;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 6px 16px rgba(0,0,0,0.08);
 }
 
 /* PRODUCTS */
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
 }
-
-.product-card {
-    background: #ffffff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
+.product-card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 18px rgba(0,0,0,0.08);
 }
-
-.product-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.15);
+.product-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
 }
-
-.product-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.product-body{
+    padding:18px;
 }
-
-.product-body {
-    padding: 18px;
+.badge{
+    background:#4CAF50;
+    color:#fff;
+    padding:4px 12px;
+    border-radius:20px;
+    font-size:12px;
+    display:inline-block;
 }
-
-.badge {
-    background: #4CAF50;
-    color: white;
-    padding: 4px 10px;
-    font-size: 12px;
-    border-radius: 20px;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-.product-body h3 {
-    margin: 5px 0 10px;
-}
-
-.specs {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.price {
-    font-size: 22px;
-    font-weight: bold;
-    color: #e91e63;
-    margin: 12px 0;
-}
-
-.buy-btn {
-    display: block;
-    text-align: center;
-    background: #ff9800;
-    color: #000;
-    padding: 10px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
+.price{
+    font-size:22px;
+    font-weight:bold;
+    color:#e91e63;
+    margin:10px 0;
 }
 
 /* MAP */
-.map {
-    width: 100%;
-    height: 300px;
-    border: none;
-    border-radius: 8px;
+.map{
+    width:100%;
+    height:320px;
+    border:none;
+    border-radius:10px;
 }
 
 /* FOOTER */
-footer {
-    background: #0b3c5d;
-    color: white;
-    padding: 20px;
-    text-align: center;
+footer{
+    background:#0b3c5d;
+    color:#fff;
+    text-align:center;
+    padding:25px;
 }
-footer a {
-    color: #ffd700;
-    text-decoration: none;
-    margin: 0 8px;
+footer a{
+    color:#ffd700;
+    text-decoration:none;
+    margin:0 10px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Realtek Computers</h1>
-    <p>Laptop Repair & Refurbished Laptops in Miyapur, Hyderabad</p>
+<!-- HERO -->
+<div class="hero">
+    <h1>REALTEK COMPUTERS</h1>
+    <p>
+        Trusted Computer Sales, Refurbished Laptops & Laptop Repair Services  
+        <br><strong>Serving Customers Across Telangana & Andhra Pradesh</strong><br><br>
+        📦 Away from our shop? No problem.  
+        You can <strong>order products through our website or WhatsApp</strong> and get guidance from our experts.
+    </p>
     <a class="btn" href="tel:07997618505">📞 Call Now</a>
-    <a class="btn whatsapp" href="https://wa.me/917997618505">💬 WhatsApp</a>
-</header>
+    <a class="btn whatsapp" href="https://wa.me/917997618505">💬 Order on WhatsApp</a>
+</div>
 
+<!-- SALES -->
 <section>
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="card">Laptop Repair & Service</div>
-        <div class="card">Laptop Not Turning On Fix</div>
-        <div class="card">SSD & RAM Upgrade</div>
-        <div class="card">Windows 10 / 11 Installation</div>
-        <div class="card">Laptop Overheating Repair</div>
-        <div class="card">Motherboard Repair</div>
+    <h2>Computer Sales & Accessories</h2>
+    <div class="grid">
+        <div class="sale-card">SSD (All Brands & Capacities)</div>
+        <div class="sale-card">RAM – Desktop & Laptop</div>
+        <div class="sale-card">Laptop Batteries</div>
+        <div class="sale-card">Keyboards & Mouse</div>
+        <div class="sale-card">19" Monitors – Frontek, Zebstar, Dell, Acer, LG</div>
+        <div class="sale-card">Laptop Chargers</div>
+        <div class="sale-card">Desktop Power Cables</div>
+        <div class="sale-card">Laptop Power Cables</div>
+        <div class="sale-card">Gaming Cabinets & Normal Cabinets</div>
+        <div class="sale-card">CMOS Batteries</div>
+        <div class="sale-card">Motherboards</div>
+        <div class="sale-card">Hard Disks (HDD)</div>
     </div>
+    <p style="text-align:center;margin-top:20px;font-size:15px;">
+        📞 Not sure what to buy? Call or WhatsApp us — we guide honestly.
+    </p>
 </section>
 
+<!-- REFURBISHED -->
 <section>
     <h2>Refurbished Laptops – Brand New Look</h2>
-
     <div class="products">
-
         <div class="product-card">
-            <img src="laptop1.jpg" alt="Refurbished Laptop">
+            <img src="laptop1.jpg">
             <div class="product-body">
                 <span class="badge">Like New</span>
                 <h3>Refurbished Laptop</h3>
-                <div class="specs">
-                    ✔ Intel Processor<br>
-                    ✔ 8GB RAM<br>
-                    ✔ 256GB SSD<br>
-                    ✔ Windows 11<br>
-                    ✔ Original Charger<br>
-                    ✔ 30 Days Warranty
-                </div>
+                <p>✔ 8GB RAM<br>✔ 256GB SSD<br>✔ Windows 11<br>✔ 30 Days Warranty</p>
                 <div class="price">₹21,999/-</div>
-                <a class="buy-btn" href="https://wa.me/917997618505">💬 Enquire on WhatsApp</a>
+                <a class="btn whatsapp" href="https://wa.me/917997618505">Enquire</a>
             </div>
         </div>
-
-        <div class="product-card">
-            <img src="laptop2.jpg" alt="Refurbished Business Laptop">
-            <div class="product-body">
-                <span class="badge">Certified</span>
-                <h3>Business Laptop</h3>
-                <div class="specs">
-                    ✔ Intel i5 Processor<br>
-                    ✔ 8GB RAM<br>
-                    ✔ 256GB SSD<br>
-                    ✔ Windows 11<br>
-                    ✔ Original Adapter<br>
-                    ✔ 30 Days Warranty
-                </div>
-                <div class="price">₹23,999/-</div>
-                <a class="buy-btn" href="https://wa.me/917997618505">💬 Enquire on WhatsApp</a>
-            </div>
-        </div>
-
-    </div>
-
-    <p style="text-align:center; font-size:14px; margin-top:15px;">
-        All refurbished laptops are professionally tested, cleaned, and certified before sale.
-    </p>
-</section>
-
-<section>
-    <h2>Why Choose Realtek Computers</h2>
-    <div class="features">
-        <div class="card">10+ Years Experience</div>
-        <div class="card">Genuine Parts Used</div>
-        <div class="card">Transparent Pricing</div>
-        <div class="card">Fast Same-Day Service</div>
-        <div class="card">Local Store in Miyapur</div>
     </div>
 </section>
 
+<!-- SERVICES -->
 <section>
-    <h2>Contact & Location</h2>
-    <p style="text-align:center;">
-        📞 Phone: 07997 618 505<br>
-        📧 Email: realtekcomputers.hyd@gmail.com<br>
-        📍 Miyapur, Hyderabad
-    </p>
+    <h2>Laptop & Computer Services</h2>
+    <div class="grid">
+        <div class="card">Laptop Repair & Service</div>
+        <div class="card">No Power / Dead Laptop Fix</div>
+        <div class="card">SSD & RAM Upgrade</div>
+        <div class="card">Windows Installation</div>
+        <div class="card">Overheating Issue Repair</div>
+        <div class="card">Motherboard Repair</div>
+        <div class="card">Virus Removal</div>
+        <div class="card">Data Backup & Recovery</div>
+    </div>
+</section>
 
-    <iframe class="map"
-        src="https://www.google.com/maps?q=Miyapur%20Hyderabad&output=embed">
-    </iframe>
+<!-- ABOUT -->
+<section>
+    <h2>About Realtek Computers</h2>
+    <p style="max-width:900px;margin:auto;text-align:center;font-size:16px;">
+        Realtek Computers is a trusted computer sales and service center in Miyapur, Hyderabad.
+        With years of experience, we focus on honest pricing, genuine parts, and customer satisfaction.
+        Customers from Telangana and Andhra Pradesh trust us for quality products and reliable support.
+    </p>
+</section>
+
+<!-- REVIEWS -->
+<section>
+    <h2>Customer Reviews</h2>
+    <div class="grid">
+        <div class="card">⭐⭐⭐⭐⭐<br>Honest service and good pricing.</div>
+        <div class="card">⭐⭐⭐⭐⭐<br>Laptop looks brand new after repair.</div>
+        <div class="card">⭐⭐⭐⭐⭐<br>Good guidance even on WhatsApp.</div>
+    </div>
+</section>
+
+<!-- MAP -->
+<section>
+    <h2>Visit Our Store</h2>
+    <iframe class="map" src="https://www.google.com/maps?q=Miyapur%20Hyderabad&output=embed"></iframe>
 </section>
 
 <footer>
-    <p>© 2026 Realtek Computers</p>
+    <p>© 2026 Realtek Computers – Miyapur, Hyderabad</p>
     <p>
         <a href="#">Privacy Policy</a> |
         <a href="#">Terms & Conditions</a> |
