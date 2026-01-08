@@ -50,6 +50,7 @@ body{
     background:#25D366;
     color:#fff;
 }
+<a class="btn" href="services.html">🛠️ View Services & Prices</a>
 
 /* SECTIONS */
 section{
@@ -130,6 +131,45 @@ h2{
     border:none;
     border-radius:10px;
 }
+<section>
+    <h2>Order / Enquiry Form</h2>
+
+    <p style="text-align:center; max-width:900px; margin:auto; font-size:16px;">
+        Customers from <strong>Telangana & Andhra Pradesh</strong> can send product or service enquiries here.
+        Our team will respond via phone or WhatsApp.
+    </p>
+
+    <form onsubmit="sendWhatsApp(); return false;" style="max-width:600px;margin:30px auto;">
+        <input type="text" id="name" placeholder="Your Name" required
+            style="width:100%;padding:12px;margin-bottom:10px;">
+        <input type="text" id="mobile" placeholder="Mobile Number" required
+            style="width:100%;padding:12px;margin-bottom:10px;">
+        <input type="text" id="product" placeholder="Product / Service Required" required
+            style="width:100%;padding:12px;margin-bottom:10px;">
+        <input type="text" id="location" placeholder="City / District"
+            style="width:100%;padding:12px;margin-bottom:15px;">
+
+        <button type="submit" class="btn whatsapp" style="width:100%;">
+            💬 Send Enquiry on WhatsApp
+        </button>
+    </form>
+</section>
+
+<script>
+function sendWhatsApp(){
+    var name = document.getElementById("name").value;
+    var mobile = document.getElementById("mobile").value;
+    var product = document.getElementById("product").value;
+    var location = document.getElementById("location").value;
+
+    var text = "Name: "+name+
+               "%0AMobile: "+mobile+
+               "%0ARequirement: "+product+
+               "%0ALocation: "+location;
+
+    window.open("https://wa.me/917997618505?text="+text,"_blank");
+}
+</script>
 
 /* FOOTER */
 footer{
@@ -182,6 +222,34 @@ footer a{
         📞 Not sure what to buy? Call or WhatsApp us — we guide honestly.
     </p>
 </section>
+    <section>
+    <h2>Computer Accessories – Price Range</h2>
+
+    <p style="text-align:center; max-width:900px; margin:auto; font-size:16px;">
+        Below are <strong>approximate price ranges</strong>.  
+        Final price depends on brand, capacity and availability.
+    </p>
+
+    <div class="grid" style="margin-top:30px;">
+        <div class="card">SSD (All Brands)<br><strong>₹3,500 – ₹12,000+</strong></div>
+        <div class="card">RAM (Laptop / Desktop)<br><strong>₹3,000 – ₹8,000+</strong></div>
+        <div class="card">Laptop Battery<br><strong>₹2,000 – ₹5,000</strong></div>
+        <div class="card">Laptop Charger<br><strong>₹1,200 – ₹3,000</strong></div>
+        <div class="card">Keyboard & Mouse<br><strong>₹500 – ₹2,000</strong></div>
+        <div class="card">19” Monitor (Frontek / Zebstar / Dell / Acer / LG)<br><strong>₹3,500 – ₹9,000+</strong></div>
+        <div class="card">Desktop Power Cable<br><strong>₹250 – ₹500</strong></div>
+        <div class="card">Laptop Power Cable<br><strong>₹400 – ₹800</strong></div>
+        <div class="card">Gaming Cabinet<br><strong>₹3,000 – ₹10,000+</strong></div>
+        <div class="card">Normal CPU Cabinet<br><strong>₹1,500 – ₹4,000</strong></div>
+        <div class="card">CMOS Battery<br><strong>₹100 – ₹300</strong></div>
+        <div class="card">Hard Disk (HDD)<br><strong>₹2,000 – ₹6,000+</strong></div>
+    </div>
+
+    <p style="text-align:center;margin-top:25px;">
+        📞 For exact price & compatibility, <strong>WhatsApp us before buying</strong>.
+    </p>
+</section>
+
 
 <!-- REFURBISHED -->
 <section>
